@@ -13,8 +13,5 @@ type Store interface {
 }
 
 func NewStore(useRedis bool) Store {
-	if useRedis {
-		return NewRedisStore()
-	}
 	return NewMemoryStore()
 }

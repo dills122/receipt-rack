@@ -15,5 +15,5 @@ func GetReceiptPoints(c *gin.Context) {
 		return
 	}
 
-	c.JSON(http.StatusOK, gin.H{"points": points.Points})
+	c.SecureJSON(http.StatusOK, gin.H{"points": points.Points})
 }

@@ -5,7 +5,6 @@ import (
 	"github.com/gin-gonic/gin"
 )
 
-// RegisterRoutes registers all the routes for the API.
 func RegisterRoutes(router *gin.Engine) {
 	router.POST("/receipts/process", handlers.ProcessReceipt)
 	router.GET("/receipts/:id/points", handlers.GetReceiptPoints)
